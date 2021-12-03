@@ -1,0 +1,23 @@
+body{
+
+    footer{
+        height: 60px;
+        background-color: $black;
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        img{
+            width: 30px;
+            left: 50%;
+        }
+        p{
+            color: $white;
+            font-size: 12px;
+            margin: 0;
+        }
+    }
+}

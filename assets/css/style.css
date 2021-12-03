@@ -1,0 +1,1007 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body header {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  z-index: 555;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+body header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header nav img {
+  width: 70px;
+  padding-left: 10px;
+}
+body header nav .navRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
+}
+body header nav .navRight .navRight__searchBarre {
+  display: flex;
+  align-items: center;
+  border: 1px solid #FFFFFF;
+  border-radius: 50px;
+  height: 20px;
+  width: 60%;
+}
+body header nav .navRight .navRight__searchBarre img {
+  width: 15px;
+}
+body header nav .navRight .navRight__searchBarre form input {
+  border: hidden;
+  background-color: transparent;
+  padding: 0px 10px;
+  width: 80%;
+  color: #FFFFFF;
+}
+body header nav .navRight .navRight__searchBarre input:focus {
+  outline: none;
+}
+body header nav .navRight .navRight__genres {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #FFFFFF;
+  border-radius: 50px;
+  height: 20px;
+  margin-right: 10px;
+  padding: 0px 10px;
+  width: 20%;
+}
+body header nav .navRight .navRight__genres p {
+  color: #FFFFFF;
+  font-size: 12px;
+}
+body header nav .navRight .navRight__genres img {
+  width: 10px;
+}
+body header nav .dropdown {
+  display: none;
+  color: #FFFFFF;
+  position: absolute;
+  z-index: 999;
+  right: 0;
+  top: 100%;
+  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+body header nav .dropdown a {
+  text-decoration: none;
+  color: white;
+}
+body header nav .dropdown a li {
+  list-style: none;
+  line-height: 5px;
+}
+body header nav .open {
+  display: block;
+}
+
+body {
+  background-color: #090620;
+}
+body main {
+  background-image: url(../images/bg-mobile.svg);
+  background-size: cover;
+}
+body main h1 {
+  text-align: right;
+  color: #FFFFFF;
+  padding: 40% 3% 15% 3%;
+  font-size: 27px;
+  font-weight: bolder;
+  margin: 0;
+}
+body main #br {
+  display: block;
+}
+body main #br span {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #FF00C9 50%);
+  display: inline;
+}
+body main .categorieIndex {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 100%;
+}
+body main .categorieIndex a {
+  text-decoration: none;
+  color: #FFFFFF;
+  border: 2px solid #17E9FF;
+  border-radius: 50px;
+  width: 60%;
+}
+body main .categorieIndex a p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+body section #info_page_film, body section #info_detail, body section #info_casting, body section #info_recommandations,
+body section #info_detail_casting, body section #info_filmographie {
+  color: #FF00C9;
+  font-size: 13px;
+  text-align: center;
+}
+
+body section {
+  background-color: #090620;
+}
+body section .choix ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 25px;
+}
+body section .choix ul li {
+  color: gray;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+body section .choix ul li:hover {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #FF00C9 50%);
+  color: #FFFFFF;
+}
+body section .choix ul li.active {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #FF00C9 50%);
+  color: #FFFFFF;
+}
+body section .categoriePage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin-left: 5px;
+  padding-bottom: 15%;
+}
+body section .categoriePage a {
+  text-decoration: none;
+  color: #FFFFFF;
+  border: 2px solid #17E9FF;
+  border-radius: 50px;
+  width: 95%;
+}
+body section .categoriePage a p {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 13px;
+}
+
+body section {
+  padding-top: 80px;
+}
+body section .gridCards {
+  margin: 3vh;
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+body section .gridCards .gridCards__cadre a {
+  text-decoration: none;
+}
+body section .gridCards .gridCards__cadre a .gridCards__cards {
+  margin: auto;
+  width: 100%;
+  position: relative;
+}
+body section .gridCards .gridCards__cadre a .gridCards__cards .gridCards__cards--opacity {
+  position: relative;
+  z-index: 0;
+  height: 100px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  transition: 300ms;
+}
+body section .gridCards .gridCards__cadre a .gridCards__cards .gridCards__cards--opacity:hover {
+  border: 2px solid #FF00C9;
+  transition: 300ms;
+}
+body section .gridCards .gridCards__cadre a .gridCards__cards .gridCards__cards--opacity .gridCards__cards--opacity--title {
+  width: 50%;
+  float: right;
+}
+body section .gridCards .gridCards__cadre a .gridCards__cards .gridCards__cards--opacity .gridCards__cards--opacity--title h3 {
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+  padding: 10px;
+  margin: 0 5px;
+}
+body section .gridCards .gridCards__cadre a .gridCards__cards .gridCards__cards--opacity .gridCards__cards--opacity--title p {
+  text-align: left;
+  color: #17E9FF;
+  font-size: 13px;
+  font-weight: 300;
+  margin: 0;
+  padding: 10px;
+  margin: 0 5px;
+}
+body section .gridCards .gridCards__cadre a .gridCards__cards .gridCards__cards--opacity .gridCards__cards--opacity--title p span {
+  color: #FFFFFF;
+}
+body section .gridCards .gridCards__cadre a .gridCards__cards .gridCards__cards--jacket img {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  width: 80px;
+  z-index: 1;
+  transition: 500ms;
+}
+body section .gridCards .gridCards__cadre a .gridCards__cards .gridCards__cards--jacket img:hover {
+  width: 35%;
+  transition: 500ms;
+}
+
+body section {
+  padding-top: 80px;
+}
+body section .casting {
+  width: 90%;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  padding-bottom: 5%;
+}
+body section .casting .casting__cadre {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+}
+body section .casting .casting__cadre a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+body section .casting .casting__cadre a:hover {
+  border: 2px solid #FF00C9;
+  transition: 300ms;
+}
+body section .casting .casting__cadre a .casting__img {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body section .casting .casting__cadre a .casting__img .w45 {
+  margin: 0;
+  margin-top: -15px;
+  width: 60px;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+body section .casting .casting__cadre a .casting__text {
+  margin: 0;
+  padding: 0;
+}
+body section .casting .casting__cadre a .casting__text h3 {
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0;
+  padding: 10px;
+  margin: 0 5px;
+}
+body section .casting .casting__cadre a .casting__text p {
+  text-align: left;
+  color: #17E9FF;
+  font-size: 13px;
+  font-weight: 300;
+  margin: 0;
+  padding: 10px;
+  margin: 0 5px;
+}
+body section .casting .casting__cadre a .casting__text p span {
+  color: #FFFFFF;
+}
+
+body section {
+  padding-top: 80px;
+}
+body section h2 {
+  margin-top: 4vh;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 10vh;
+}
+body section .detail {
+  width: 90%;
+  margin: 10px;
+}
+body section .detail .detail__cadre {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "img" "text" "biographie" "production" "genre";
+  grid-gap: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #FF00C9;
+}
+body section .detail .detail__cadre .detail__img {
+  padding: 0;
+  padding-left: 35px;
+  grid-area: img;
+}
+body section .detail .detail__cadre .detail__img img {
+  margin-top: -50px;
+}
+body section .detail .detail__cadre .detail__text {
+  padding-left: 15px;
+}
+body section .detail .detail__cadre .detail__text h3 {
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0;
+  padding: 10px;
+  margin: 0 5px;
+}
+body section .detail .detail__cadre .detail__text p {
+  line-height: 0;
+  text-align: left;
+  color: #17E9FF;
+  font-size: 13px;
+  font-weight: 300;
+  margin: 0;
+  padding: 10px;
+  margin: 0 5px;
+}
+body section .detail .detail__cadre .detail__text p span {
+  color: #FFFFFF;
+}
+body section .detail .detail__cadre .detail__overview {
+  grid-area: biographie;
+  padding-left: 15px;
+}
+body section .detail .detail__cadre .detail__overview p {
+  text-align: left;
+  color: #17E9FF;
+  font-size: 13px;
+  font-weight: 300;
+  margin: 0;
+  padding: 10px;
+  margin: 0 5px;
+}
+body section .detail .detail__cadre .detail__overview p span {
+  color: #FFFFFF;
+}
+body section .detail .detail__cadre .detail__genre {
+  grid-area: genre;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+body section .detail .detail__cadre .detail__genre ul {
+  list-style: none;
+  text-align: left;
+  color: #17E9FF;
+  font-size: 13px;
+  font-weight: 300;
+  margin: 0;
+  padding: 10px;
+  margin: 0 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+body section .detail .detail__cadre .detail__genre ul li {
+  line-height: 0;
+}
+body section .detail .detail__cadre .detail__genre ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+body section .detail .detail__cadre .detail__genre ul li a:hover {
+  color: #FF00C9;
+}
+body section .detail .detail__cadre .detail__prod {
+  grid-area: production;
+  padding-left: 15px;
+}
+body section .detail .detail__cadre .detail__prod ul {
+  list-style: none;
+  text-align: left;
+  color: #17E9FF;
+  font-size: 13px;
+  font-weight: 300;
+  margin: 0;
+  padding: 10px;
+  margin: 0 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+body section .detail .detail__cadre .detail__prod ul li {
+  line-height: 0;
+  color: #FFFFFF;
+}
+
+body section .pagination {
+  position: relative;
+}
+body section .pagination ul {
+  width: 95%;
+  margin-left: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 8px;
+  border-radius: 50px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+body section .pagination ul li {
+  color: #FFFFFF;
+  list-style: none;
+  line-height: 30px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: all 0.3s ease;
+  list-style: none;
+  height: 25px;
+  width: 25px;
+  margin: 0 3px;
+  line-height: 25px;
+  border-radius: 50%;
+}
+body section .pagination ul li:hover {
+  color: #fff;
+  background: #FF00C9;
+}
+body section .pagination ul li.active {
+  color: #fff;
+  background: #FF00C9;
+}
+
+body section {
+  padding-top: 80px;
+}
+body section h2 {
+  margin-top: 4vh;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 10vh;
+}
+body section .profil {
+  width: 90%;
+  margin-left: auto;
+  padding-top: 8%;
+}
+body section .profil .profil__cadre {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas: "img text" "biographie biographie";
+  grid-gap: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #FF00C9;
+}
+body section .profil .profil__cadre .profil__img {
+  padding: 0;
+  padding-left: 20px;
+  grid-area: img;
+}
+body section .profil .profil__cadre .profil__img img {
+  margin-top: -40px;
+}
+body section .profil .profil__text {
+  grid-area: text;
+}
+body section .profil .profil__text h3 {
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0;
+  padding: 10px;
+  margin: 0 5px;
+}
+body section .profil .profil__text p {
+  text-align: left;
+  color: #17E9FF;
+  font-size: 13px;
+  font-weight: 300;
+  margin: 0;
+  padding: 10px;
+  margin: 0 5px;
+}
+body section .profil .profil__text p span {
+  color: #FFFFFF;
+}
+body section .profil .profil__overview {
+  grid-area: biographie;
+}
+body section .profil .profil__overview p {
+  text-align: left;
+  color: #17E9FF;
+  font-size: 13px;
+  font-weight: 300;
+  margin: 0;
+  padding: 10px;
+  margin: 0 5px;
+}
+body section .profil .profil__overview p span {
+  color: #FFFFFF;
+}
+
+body footer {
+  height: 60px;
+  background-color: #000000;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+body footer img {
+  width: 30px;
+  left: 50%;
+}
+body footer p {
+  color: #FFFFFF;
+  font-size: 12px;
+  margin: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  body header {
+    width: 100%;
+    height: 80px;
+  }
+  body header nav {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  body header nav .navRight {
+    gap: 20px;
+    width: 50%;
+  }
+  body header nav .navRight .navRight__searchBarre {
+    height: 30px;
+    width: 50%;
+  }
+  body header nav .navRight .navRight__searchBarre:hover {
+    border-color: #FF00C9;
+    color: #FF00C9;
+  }
+  body header nav .navRight .navRight__searchBarre img {
+    width: 15px;
+  }
+  body header nav .navRight .navRight__searchBarre form input {
+    width: 300px;
+    font-size: 16px;
+  }
+  body header nav .navRight .navRight__genres {
+    height: 30px;
+    width: 10%;
+  }
+  body header nav .navRight .navRight__genres:hover {
+    border-color: #FF00C9;
+    color: #FF00C9;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body main {
+    background-image: url(../images/BG.svg);
+    background-size: cover;
+  }
+  body main h1 {
+    padding: 10% 3% 5% 3%;
+    font-size: 4em;
+    margin: 0;
+  }
+  body main .categorieIndex {
+    gap: 30px;
+    padding-bottom: 5%;
+  }
+  body main .categorieIndex a {
+    font-size: 2em;
+    width: 40%;
+    transition: 300ms;
+  }
+  body main .categorieIndex a:hover {
+    border: 2px solid #FF00C9;
+    transition: 300ms;
+    color: #FF00C9;
+  }
+  body main .categorieIndex a p {
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body section #info_page_film, body section #info_detail, body section #info_casting, body section #info_recommandations,
+body section #info_detail_casting, body section #info_filmographie {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body section .choix ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40%;
+    padding: 5% 0 3% 0;
+  }
+  body section .choix ul li {
+    color: gray;
+    font-size: 3em;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  body section .choix ul li:hover {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #FF00C9 50%);
+    color: #FFFFFF;
+  }
+  body section .choix ul li.active {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #FF00C9 50%);
+    color: #FFFFFF;
+  }
+  body section .categoriePage {
+    display: flex;
+    margin-left: 0;
+    width: 90%;
+    margin: auto;
+    gap: 5%;
+    padding-bottom: 5%;
+  }
+  body section .categoriePage a {
+    text-decoration: none;
+  }
+  body section .categoriePage a:hover {
+    border: 2px solid #FF00C9;
+    transition: 300ms;
+    color: #FF00C9 !important;
+  }
+  body section .categoriePage a p {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body section {
+    padding-top: 80px;
+  }
+  body section .gridCards {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    padding-bottom: 5%;
+    margin: 0 50px;
+  }
+  body section .gridCards .gridCards__cadre a .gridCards__cards {
+    width: 100%;
+  }
+  body section .gridCards .gridCards__cadre a .gridCards__cards .gridCards__cards--opacity {
+    height: 150px;
+  }
+  body section .gridCards .gridCards__cadre a .gridCards__cards .gridCards__cards--opacity:hover {
+    border: 2px solid #FF00C9;
+    transition: 300ms;
+  }
+  body section .gridCards .gridCards__cadre a .gridCards__cards .gridCards__cards--opacity .gridCards__cards--opacity--title {
+    width: 60%;
+  }
+  body section .gridCards .gridCards__cadre a .gridCards__cards .gridCards__cards--opacity .gridCards__cards--opacity--title h3 {
+    font-size: 17px;
+    margin-left: 20px;
+    color: #FFFFFF;
+  }
+  body section .gridCards .gridCards__cadre a .gridCards__cards .gridCards__cards--opacity .gridCards__cards--opacity--title p {
+    font-size: 16px;
+    margin-left: 20px;
+    color: #17E9FF;
+  }
+  body section .gridCards .gridCards__cadre a .gridCards__cards .gridCards__cards--opacity .gridCards__cards--opacity--title p span {
+    color: #FFFFFF;
+  }
+  body section .gridCards .gridCards__cadre a .gridCards__cards .gridCards__cards--jacket img {
+    width: 115px;
+  }
+  body section .gridCards .gridCards__cadre a .gridCards__cards .gridCards__cards--jacket img:hover {
+    width: 45%;
+    transition: 500ms;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body section .casting {
+    width: 98%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    padding-bottom: 5%;
+  }
+  body section .casting .casting__cadre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+  }
+  body section .casting .casting__cadre a {
+    text-decoration: none;
+    color: #FFFFFF;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    transition: 300ms;
+  }
+  body section .casting .casting__cadre a:hover {
+    border: 2px solid #FF00C9;
+    transition: 300ms;
+  }
+  body section .casting .casting__cadre a .casting__img {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body section .casting .casting__cadre a .casting__img .w45 {
+    margin: 0;
+    margin-top: -15px;
+    width: 60px;
+    height: 60px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 50%;
+  }
+  body section .casting .casting__cadre a .casting__text {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  body section .casting .casting__cadre a .casting__text h3 {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #FFFFFF;
+  }
+  body section .casting .casting__cadre a .casting__text p {
+    line-height: 0;
+    font-size: 16px;
+    margin-left: 10px;
+    color: #17E9FF;
+    padding-bottom: 20px;
+  }
+  body section .casting .casting__cadre a .casting__text p span {
+    color: #FFFFFF;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body section {
+    padding-top: 80px;
+  }
+  body section h2 {
+    margin-top: 4vh;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 10vh;
+  }
+  body section .detail {
+    width: 80%;
+    margin: auto;
+  }
+  body section .detail .detail__cadre {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: "img text" "img biographie" "vide production" "vide genre";
+    grid-gap: 10px;
+    border: 1px solid #FF00C9;
+  }
+  body section .detail .detail__cadre .detail__img {
+    padding: 0;
+    padding-left: 35px;
+    grid-area: img;
+  }
+  body section .detail .detail__cadre .detail__img img {
+    margin-top: -50px;
+  }
+  body section .detail .detail__cadre .detail__text {
+    padding-left: 0;
+    grid-area: text;
+  }
+  body section .detail .detail__cadre .detail__text h3 {
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0;
+    padding: 12px 12px 22px 12px;
+    margin: 0 5px;
+  }
+  body section .detail .detail__cadre .detail__text p {
+    line-height: 0;
+    font-size: 16px;
+    margin-left: 12px;
+    color: #17E9FF;
+  }
+  body section .detail .detail__cadre .detail__text p span {
+    color: #FFFFFF;
+  }
+  body section .detail .detail__cadre .detail__overview {
+    grid-area: biographie;
+  }
+  body section .detail .detail__cadre .detail__overview p {
+    padding-left: 0;
+    font-size: 16px;
+    margin-left: 12px;
+    color: #17E9FF;
+  }
+  body section .detail .detail__cadre .detail__overview p span {
+    color: #FFFFFF;
+  }
+  body section .detail .detail__cadre .detail__genre {
+    grid-area: genre;
+  }
+  body section .detail .detail__cadre .detail__genre ul {
+    padding-left: 0;
+    list-style: none;
+    font-size: 16px;
+    margin-left: 12px;
+    color: #17E9FF;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  body section .detail .detail__cadre .detail__genre ul li {
+    line-height: 1.3;
+  }
+  body section .detail .detail__cadre .detail__genre ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  body section .detail .detail__cadre .detail__genre ul li a:hover {
+    color: #FF00C9;
+  }
+  body section .detail .detail__cadre .detail__prod {
+    grid-area: production;
+  }
+  body section .detail .detail__cadre .detail__prod ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 16px;
+    margin-left: 12px;
+    color: #17E9FF;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  body section .detail .detail__cadre .detail__prod ul li {
+    line-height: 1.3;
+    color: #FFFFFF;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: #090620;
+  }
+  body section .pagination {
+    position: relative;
+  }
+  body section .pagination ul {
+    margin-bottom: 30px;
+    width: 95%;
+    margin-left: 4vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 8px;
+    border-radius: 50px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  body section .pagination ul li {
+    color: #FFFFFF;
+    list-style: none;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    transition: all 0.3s ease;
+    list-style: none;
+    height: 45px;
+    width: 45px;
+    margin: 0 3px;
+    line-height: 45px;
+    border-radius: 50%;
+  }
+  body section .pagination ul li:hover {
+    color: #fff;
+    background: #FF00C9;
+  }
+  body section .pagination ul li.active {
+    color: #fff;
+    background: #FF00C9;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body section {
+    padding-top: 80px;
+  }
+  body section h2 {
+    margin-top: 4vh;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 10vh;
+  }
+  body section .profil {
+    width: 80%;
+    margin: auto;
+    padding-top: 5%;
+  }
+  body section .profil .profil__cadre {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: "img text" "img biographie";
+    gap: 10px 20px;
+    border: 1px solid #FF00C9;
+  }
+  body section .profil .profil__img {
+    padding: 0;
+    padding-left: 35px;
+    grid-area: img;
+  }
+  body section .profil .profil__img img {
+    margin-top: -50px;
+  }
+  body section .profil .profil__text {
+    grid-area: text;
+  }
+  body section .profil .profil__text h3 {
+    font-size: 22px;
+    margin-left: 10px;
+    color: #FFFFFF;
+  }
+  body section .profil .profil__text p {
+    font-size: 16px;
+    margin-left: 10px;
+    color: #17E9FF;
+  }
+  body section .profil .profil__text p span {
+    color: #FFFFFF;
+  }
+  body section .profil .profil__overview {
+    grid-area: biographie;
+  }
+  body section .profil .profil__overview p {
+    font-size: 16px;
+    margin-left: 10px;
+    color: #17E9FF;
+  }
+  body section .profil .profil__overview p span {
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+}
+body {
+  margin: 0;
+  font-family: "Roboto";
+}/*# sourceMappingURL=style.css.map */
