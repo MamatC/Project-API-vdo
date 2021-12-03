@@ -1,0 +1,65 @@
+@media screen and (min-width: 1200px) {
+    body{
+        section{
+            padding-top: 80px;
+
+            .gridCards{
+                grid-template-columns: repeat(4,1fr);
+                gap: 50px;
+                padding-bottom: 5%;
+                margin: 0 50px;
+
+                .gridCards__cadre{
+                    
+                a{
+
+                    .gridCards__cards{
+                        width: 100%;
+                        
+    
+    
+                        .gridCards__cards--opacity{
+                            height: 150px;                          
+                            
+                            &:hover{
+                                border: 2px solid $purple;
+                                transition: 300ms;
+                                
+                            }
+                            
+                            .gridCards__cards--opacity--title{
+                                width: 60%;
+                                h3{
+                                    font-size: 17px;
+                                    margin-left: 20px;  
+                                    color: $white;
+                                }
+                                p{
+                                    font-size: 16px;
+                                    margin-left: 20px;
+                                    color: $blue-light;
+                                    span{
+                                    color: $white;
+                                    }
+                                }
+
+                            }
+    
+                        }
+                        .gridCards__cards--jacket{
+                            img{
+                                width: 115px;
+
+                                &:hover{
+                                    width: 45%;
+                                    transition: 500ms;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            }
+        }
+    }
+}

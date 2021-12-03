@@ -1,0 +1,71 @@
+body{
+    section{
+        padding-top: 80px;
+
+        .casting{
+            width: 90%;
+            margin: 10px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 50px;
+            padding-bottom: 5%; 
+
+            .casting__cadre{
+                margin-left: 15px;
+                display: flex;
+                flex-direction: row;
+                gap: 2px;
+
+                a{
+                    text-decoration: none;
+                    color: $white;
+                    &:hover{
+                        border: 2px solid $purple;
+                        transition: 300ms;
+                    }
+                    .casting__img{
+                        margin: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+    
+                        .w45{
+                            margin: 0;
+                            margin-top: -15px;
+                            width: 60px;
+                            height: 60px;
+                            object-fit: cover;
+                            border-radius: 50%;
+                        }
+    
+                    }
+                    .casting__text{
+                        margin: 0;
+                        padding: 0;
+                        h3{
+                            text-align: left;
+                            color: $white;
+                            font-size: 15px;
+                            font-weight: 300;
+                            margin: 0;
+                            padding: 10px;
+                            margin: 0 5px;  
+                        }
+                        p{
+                            text-align: left;
+                            color: $blue-light;
+                            font-size: 13px;
+                            font-weight: 300;
+                            margin: 0;
+                            padding: 10px;
+                            margin: 0 5px;
+                            span{
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

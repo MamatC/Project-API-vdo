@@ -1,0 +1,55 @@
+body{
+    
+    section{
+        background-color: $blue-bg;
+        // choix films ou series
+        .choix ul{
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding-top: 25px;
+
+            li{
+                color: gray;
+                font-size: 2em;
+                font-weight: 700;
+                margin-bottom: 10px;
+
+                &:hover{
+                    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FF00C9 50%);
+                    color: $white;
+                }
+                &.active{
+                    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FF00C9 50%);
+                    color: $white;
+                }
+            }
+        }
+
+        // choix  categories
+        .categoriePage{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 5px;
+            margin-left: 5px;
+            padding-bottom: 15%;
+                a{
+                    text-decoration: none;
+                    color: $white;
+                    border: 2px solid $blue-light;
+                    border-radius: 50px;
+                    width: 95%;
+ 
+                    p{
+                        text-align: center;
+                        margin: 10px 0;
+                        font-size: 13px;
+                    }
+                }
+
+
+        }
+    }
+}

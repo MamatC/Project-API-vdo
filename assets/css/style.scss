@@ -1,0 +1,7 @@
+@import './variables', './header-mobile', './accueil-mobile','./categories-mobile', './choix-mobile', './boxFilms-mobile', './boxActeurs-mobile','./detailFilms-mobile','./pagination-mobile','./detailActeurs-mobile','./footer-mobile';
+@import './header-web','./accueil-web','./categories-web','./choix-web','./boxFilms-web','./boxActeurs-web','./detailFilms-web','./pagination-web','./detailActeurs-web','./footer-web';
+
+body{
+    margin: 0;
+    font-family: 'Roboto';
+}

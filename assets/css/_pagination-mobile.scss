@@ -1,0 +1,44 @@
+    body{
+        section{
+            .pagination{
+                position: relative;
+                ul{
+                    width: 95%;
+                    margin-left: 3px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    background: rgba(0,0,0,0.8);
+                    padding: 8px;
+                    border-radius: 50px;
+                    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    
+                    li{
+                        color: $white;
+                        list-style: none;
+                        line-height: 30px;
+                        text-align: center;
+                        font-size: 13px;
+                        font-weight: 500;
+                        cursor: pointer;
+                        user-select: none;
+                        transition: all 0.3s ease;
+                        list-style: none;
+                        height: 25px;
+                        width: 25px;
+                        margin: 0 3px;
+                        line-height: 25px;
+                        border-radius: 50%;
+
+                        &:hover{
+                            color: #fff;
+                            background: $purple; 
+                        }
+                        &.active{
+                            color: #fff;
+                            background: $purple;
+                        }
+                    }
+                }
+            }
+        }
+    }

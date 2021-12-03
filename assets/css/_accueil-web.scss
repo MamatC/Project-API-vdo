@@ -1,0 +1,39 @@
+@media screen and (min-width: 1200px) {
+
+    body{
+
+        main{
+            background-image: url(../images/BG.svg);
+            background-size: cover;
+
+            h1{
+                padding: 10% 3% 5% 3%;
+                font-size: 4em;
+                margin: 0;
+            }
+          
+            .categorieIndex{
+                gap: 30px;
+                padding-bottom: 5%;
+
+                a{
+                    font-size: 2em;
+                    width: 40%;
+                    transition: 300ms;
+                    
+                    &:hover{
+                        border: 2px solid $purple;
+                        transition: 300ms;
+                        color: $purple;
+                    }
+                    
+                    p{
+                        text-align: center;
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+    
+} 

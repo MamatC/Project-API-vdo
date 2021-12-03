@@ -1,0 +1,67 @@
+@media screen and (min-width: 1200px) {
+    body{
+        section{
+            padding-top: 80px;
+            
+            h2{
+                margin-top: 4vh;
+                color: $white; 
+                text-align: center;
+                margin-bottom: 10vh;
+            }
+            .profil{
+                width: 80%;
+                margin: auto;
+                padding-top: 5%;
+                .profil__cadre{
+                    display: grid;
+                    grid-template-columns: 250px 1fr;
+                    grid-template-areas:
+                     "img text"
+                     "img biographie";
+                    gap: 10px 20px;
+                    border: 1px solid $purple;
+                }
+
+                .profil__img{
+                    padding: 0;
+                    padding-left: 35px;
+                    grid-area: img;
+
+                    img{
+                        margin-top: -50px;
+                    }
+                }
+ 
+                .profil__text{
+                    grid-area: text;
+                    h3{
+                        font-size: 22px;
+                        margin-left: 10px;
+                        color: $white;
+                    } 
+                    p{
+                        font-size: 16px;
+                        margin-left: 10px;
+                        color: $blue-light;
+                        span{
+                            color: $white;
+                        }
+                    }
+                }
+                .profil__overview{
+                    grid-area: biographie;
+                    p{
+                        font-size: 16px;
+                        margin-left: 10px;
+                        color: $blue-light;
+                        span{
+                            font-size: 16px;
+                            color: $white;
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}

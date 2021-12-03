@@ -1,0 +1,82 @@
+@media screen and (min-width: 1200px) {
+    body{
+        section{   
+
+
+    .casting{
+        width: 98%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 50px;
+        padding-bottom: 5%; 
+
+        .casting__cadre{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            width: 100%;//
+
+            a{
+                text-decoration: none;
+                color: $white;
+                width: 100%;//
+                background-color: rgba($color: #000000, $alpha: 0.5);
+                border: 2px solid rgba($color: #000000, $alpha: 0.5);
+                transition: 300ms;//
+                &:hover{
+                    border: 2px solid $purple;
+                    transition: 300ms;  
+                }
+
+                .casting__img{
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .w45{
+                        margin: 0;
+                        margin-top: -15px;
+                        width: 60px;
+                        height: 60px;
+                        object-fit: cover;
+                        border-radius: 50%;
+
+                    }
+
+                }
+                .casting__text{
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    h3{
+                        font-size: 20px;
+                        margin-left: 10px;
+                        color: $white;
+                    }
+                    p{
+                        line-height: 0;
+                        font-size: 16px;
+                        margin-left: 10px;
+                        color: $blue-light;
+                        padding-bottom: 20px;
+                        span{
+                            color: $white;
+                        }
+                    }
+
+            }
+        }
+    }
+
+    }
+
+        }
+    }
+} 
